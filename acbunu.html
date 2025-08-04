@@ -41,7 +41,7 @@
       animation: floatUp linear infinite;
       filter: drop-shadow(0 1px 1px rgba(255 255 255 / 0.4));
     }
-    
+
     .balloon::after {
       content: '';
       position: absolute;
@@ -351,6 +351,15 @@ Bu yazıyı okuduysan aşağıdaki butona bas ve cevabını orada ver. :)
   HADİ ŞİMDİ WPDEN YAZ BANA
 </div>
 
+  <!-- YouTube müzik player gizli olarak -->
+  <iframe 
+    width="0" height="0" 
+    src="https://www.youtube.com/embed/XeZdygT18wg?autoplay=1&loop=1&playlist=XeZdygT18wg&controls=0&mute=0" 
+    frameborder="0" 
+    allow="autoplay" 
+    allowfullscreen>
+  </iframe>
+
   <script>
     const flap = document.getElementById('flap');
     const passwordContainer = document.getElementById('password-container');
@@ -407,7 +416,6 @@ Bu yazıyı okuduysan aşağıdaki butona bas ve cevabını orada ver. :)
     });
 
     noBtn.addEventListener('click', () => {
-      console.log('Hayır butonuna basıldı');
       noClickCount++;
       if (noClickCount >= 3) {
         noBtn.style.display = 'none';
@@ -429,7 +437,6 @@ Bu yazıyı okuduysan aşağıdaki butona bas ve cevabını orada ver. :)
     });
 
     yesBtn.addEventListener('click', () => {
-      console.log('Evet butonuna basıldı');
       questionPage.style.display = 'none';
       finalPage.style.display = 'flex';
     });
